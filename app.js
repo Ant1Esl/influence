@@ -14,5 +14,11 @@ http.listen(3000,function(){
 });
 
 io.on('connection',function(socket){
-   console.log('a user is connected');
+    var choices ='';
+    console.log('a user is connected');
+        socket.on('choice',function(what){
+            choices += ' '+what;
+            console.log('chosen: ' +what);
+            socket.emit('choices', choices);
+    });
 });
