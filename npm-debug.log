@@ -1,0 +1,557 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'socket.io', '--save' ]
+2 info using npm@3.3.4
+3 info using node@v0.10.36
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData socket.io
+8 silly fetchNamedPackageData socket.io
+9 silly mapToRegistry name socket.io
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+13 verbose request uri https://registry.npmjs.org/socket.io
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 15:58:39
+16 verbose request id 58713651782e8339
+17 verbose etag "8KOAW17SV0MIM6X2EEHP3HFS1"
+18 http request GET https://registry.npmjs.org/socket.io
+19 http 304 https://registry.npmjs.org/socket.io
+20 verbose headers { date: 'Mon, 28 Sep 2015 13:58:39 GMT',
+20 verbose headers   via: '1.1 varnish',
+20 verbose headers   'cache-control': 'max-age=60',
+20 verbose headers   etag: '"8KOAW17SV0MIM6X2EEHP3HFS1"',
+20 verbose headers   age: '56',
+20 verbose headers   connection: 'keep-alive',
+20 verbose headers   'x-served-by': 'cache-fra1226-FRA',
+20 verbose headers   'x-cache': 'HIT',
+20 verbose headers   'x-cache-hits': '1',
+20 verbose headers   'x-timer': 'S1443448719.827824,VS0,VE0',
+20 verbose headers   vary: 'Accept' }
+21 silly get cb [ 304,
+21 silly get   { date: 'Mon, 28 Sep 2015 13:58:39 GMT',
+21 silly get     via: '1.1 varnish',
+21 silly get     'cache-control': 'max-age=60',
+21 silly get     etag: '"8KOAW17SV0MIM6X2EEHP3HFS1"',
+21 silly get     age: '56',
+21 silly get     connection: 'keep-alive',
+21 silly get     'x-served-by': 'cache-fra1226-FRA',
+21 silly get     'x-cache': 'HIT',
+21 silly get     'x-cache-hits': '1',
+21 silly get     'x-timer': 'S1443448719.827824,VS0,VE0',
+21 silly get     vary: 'Accept' } ]
+22 verbose etag https://registry.npmjs.org/socket.io from cache
+23 verbose get saving socket.io to /Users/AntoineEisele/.npm/registry.npmjs.org/socket.io/.cache.json
+24 silly install normalizeTree
+25 silly loadCurrentTree Finishing
+26 silly loadIdealTree Starting
+27 silly install loadIdealTree
+28 silly cloneCurrentTree Starting
+29 silly install cloneCurrentTreeToIdealTree
+30 silly cloneCurrentTree Finishing
+31 silly loadShrinkwrap Starting
+32 silly install loadShrinkwrap
+33 silly loadShrinkwrap Finishing
+34 silly loadAllDepsIntoIdealTree Starting
+35 silly install loadAllDepsIntoIdealTree
+36 silly resolveWithNewModule socket.io@1.3.7 checking installable status
+37 silly cache add args [ 'socket.io', null ]
+38 verbose cache add spec socket.io
+39 silly cache add parsed spec { raw: 'socket.io',
+39 silly cache add   scope: null,
+39 silly cache add   name: 'socket.io',
+39 silly cache add   rawSpec: '',
+39 silly cache add   spec: '*',
+39 silly cache add   type: 'range' }
+40 silly addNamed socket.io@*
+41 verbose addNamed "*" is a valid semver range for socket.io
+42 silly addNameRange { name: 'socket.io', range: '*', hasData: false }
+43 silly mapToRegistry name socket.io
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/socket.io
+47 verbose addNameRange registry:https://registry.npmjs.org/socket.io not in flight; fetching
+48 verbose get https://registry.npmjs.org/socket.io not expired, no request
+49 silly addNameRange number 2 { name: 'socket.io', range: '*', hasData: true }
+50 silly addNameRange versions [ 'socket.io',
+50 silly addNameRange   [ '0.3.8',
+50 silly addNameRange     '0.4.0',
+50 silly addNameRange     '0.4.1',
+50 silly addNameRange     '0.5.1',
+50 silly addNameRange     '0.5.3',
+50 silly addNameRange     '0.6.0',
+50 silly addNameRange     '0.6.1',
+50 silly addNameRange     '0.6.3',
+50 silly addNameRange     '0.6.4',
+50 silly addNameRange     '0.6.5',
+50 silly addNameRange     '0.6.6',
+50 silly addNameRange     '0.6.7',
+50 silly addNameRange     '0.6.8',
+50 silly addNameRange     '0.6.9',
+50 silly addNameRange     '0.6.10',
+50 silly addNameRange     '0.6.11',
+50 silly addNameRange     '0.6.12',
+50 silly addNameRange     '0.6.14',
+50 silly addNameRange     '0.6.15',
+50 silly addNameRange     '0.6.16',
+50 silly addNameRange     '0.6.17',
+50 silly addNameRange     '0.6.18',
+50 silly addNameRange     '0.7.0',
+50 silly addNameRange     '0.7.1',
+50 silly addNameRange     '0.7.2',
+50 silly addNameRange     '0.7.3',
+50 silly addNameRange     '0.7.4',
+50 silly addNameRange     '0.7.5',
+50 silly addNameRange     '0.7.6',
+50 silly addNameRange     '0.7.7',
+50 silly addNameRange     '0.7.8',
+50 silly addNameRange     '0.7.9',
+50 silly addNameRange     '0.7.10',
+50 silly addNameRange     '0.7.11',
+50 silly addNameRange     '0.8.0',
+50 silly addNameRange     '0.8.1',
+50 silly addNameRange     '0.8.2',
+50 silly addNameRange     '0.8.3',
+50 silly addNameRange     '0.8.4',
+50 silly addNameRange     '0.8.5',
+50 silly addNameRange     '0.8.6',
+50 silly addNameRange     '0.8.7',
+50 silly addNameRange     '0.9.0',
+50 silly addNameRange     '0.9.1',
+50 silly addNameRange     '0.9.1-1',
+50 silly addNameRange     '0.9.2',
+50 silly addNameRange     '0.9.3',
+50 silly addNameRange     '0.9.4',
+50 silly addNameRange     '0.9.5',
+50 silly addNameRange     '0.9.6',
+50 silly addNameRange     '0.9.7',
+50 silly addNameRange     '0.9.8',
+50 silly addNameRange     '0.9.9',
+50 silly addNameRange     '0.9.10',
+50 silly addNameRange     '0.9.11',
+50 silly addNameRange     '0.9.12',
+50 silly addNameRange     '0.9.13',
+50 silly addNameRange     '0.9.14',
+50 silly addNameRange     '0.9.15',
+50 silly addNameRange     '0.9.16',
+50 silly addNameRange     '1.0.0-pre',
+50 silly addNameRange     '1.0.0-pre2',
+50 silly addNameRange     '1.0.0-pre3',
+50 silly addNameRange     '1.0.0-pre4',
+50 silly addNameRange     '1.0.0-pre5',
+50 silly addNameRange     '0.9.17',
+50 silly addNameRange     '1.0.0',
+50 silly addNameRange     '1.0.1',
+50 silly addNameRange     '1.0.2',
+50 silly addNameRange     '1.0.3',
+50 silly addNameRange     '1.0.4',
+50 silly addNameRange     '1.0.5',
+50 silly addNameRange     '1.0.6',
+50 silly addNameRange     '1.1.0',
+50 silly addNameRange     '1.2.0',
+50 silly addNameRange     '1.2.1',
+50 silly addNameRange     '1.3.0',
+50 silly addNameRange     '1.3.1',
+50 silly addNameRange     '1.3.2',
+50 silly addNameRange     '1.3.3',
+50 silly addNameRange     '1.3.4',
+50 silly addNameRange     '1.3.5',
+50 silly addNameRange     '1.3.6',
+50 silly addNameRange     '1.3.7' ] ]
+51 silly addNamed socket.io@1.3.7
+52 verbose addNamed "1.3.7" is a plain semver version for socket.io
+53 silly cache afterAdd socket.io@1.3.7
+54 verbose afterAdd /Users/AntoineEisele/.npm/socket.io/1.3.7/package/package.json not in flight; writing
+55 verbose afterAdd /Users/AntoineEisele/.npm/socket.io/1.3.7/package/package.json written
+56 silly fetchNamedPackageData engine.io
+57 silly mapToRegistry name engine.io
+58 silly mapToRegistry using default registry
+59 silly mapToRegistry registry https://registry.npmjs.org/
+60 silly mapToRegistry uri https://registry.npmjs.org/engine.io
+61 silly fetchNamedPackageData socket.io-parser
+62 silly mapToRegistry name socket.io-parser
+63 silly mapToRegistry using default registry
+64 silly mapToRegistry registry https://registry.npmjs.org/
+65 silly mapToRegistry uri https://registry.npmjs.org/socket.io-parser
+66 silly fetchNamedPackageData socket.io-client
+67 silly mapToRegistry name socket.io-client
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry uri https://registry.npmjs.org/socket.io-client
+71 silly fetchNamedPackageData socket.io-adapter
+72 silly mapToRegistry name socket.io-adapter
+73 silly mapToRegistry using default registry
+74 silly mapToRegistry registry https://registry.npmjs.org/
+75 silly mapToRegistry uri https://registry.npmjs.org/socket.io-adapter
+76 silly fetchNamedPackageData has-binary-data
+77 silly mapToRegistry name has-binary-data
+78 silly mapToRegistry using default registry
+79 silly mapToRegistry registry https://registry.npmjs.org/
+80 silly mapToRegistry uri https://registry.npmjs.org/has-binary-data
+81 silly fetchNamedPackageData debug
+82 silly mapToRegistry name debug
+83 silly mapToRegistry using default registry
+84 silly mapToRegistry registry https://registry.npmjs.org/
+85 silly mapToRegistry uri https://registry.npmjs.org/debug
+86 verbose request uri https://registry.npmjs.org/socket.io-client
+87 verbose request no auth needed
+88 info attempt registry request try #1 at 15:58:39
+89 verbose etag "3TBADXOHFNRKDGYZMA7S3PO1U"
+90 http request GET https://registry.npmjs.org/socket.io-client
+91 verbose request uri https://registry.npmjs.org/socket.io-adapter
+92 verbose request no auth needed
+93 info attempt registry request try #1 at 15:58:39
+94 verbose etag "4RY3X0GRJJ3C0J2LF48APC0B2"
+95 http request GET https://registry.npmjs.org/socket.io-adapter
+96 verbose request uri https://registry.npmjs.org/has-binary-data
+97 verbose request no auth needed
+98 info attempt registry request try #1 at 15:58:39
+99 verbose etag "CE5JOBAP2Y5B0IFJ6IIYIFS4O"
+100 http request GET https://registry.npmjs.org/has-binary-data
+101 verbose request uri https://registry.npmjs.org/socket.io-parser
+102 verbose request no auth needed
+103 info attempt registry request try #1 at 15:58:39
+104 verbose etag "AUAWA5XBJL5DN0HIAPJM2EPPU"
+105 http request GET https://registry.npmjs.org/socket.io-parser
+106 verbose request uri https://registry.npmjs.org/debug
+107 verbose request no auth needed
+108 info attempt registry request try #1 at 15:58:39
+109 verbose etag "6UE7LP1DIMFTCHBCCLMYQ1OKS"
+110 http request GET https://registry.npmjs.org/debug
+111 verbose request uri https://registry.npmjs.org/engine.io
+112 verbose request no auth needed
+113 info attempt registry request try #1 at 15:58:40
+114 verbose etag "C9CRWKZLEYGA7DNMOBOLOXW0E"
+115 http request GET https://registry.npmjs.org/engine.io
+116 http 304 https://registry.npmjs.org/socket.io-client
+117 verbose headers { date: 'Mon, 28 Sep 2015 13:58:40 GMT',
+117 verbose headers   via: '1.1 varnish',
+117 verbose headers   'cache-control': 'max-age=60',
+117 verbose headers   etag: '"3TBADXOHFNRKDGYZMA7S3PO1U"',
+117 verbose headers   age: '28',
+117 verbose headers   connection: 'keep-alive',
+117 verbose headers   'x-served-by': 'cache-fra1248-FRA',
+117 verbose headers   'x-cache': 'HIT',
+117 verbose headers   'x-cache-hits': '2',
+117 verbose headers   'x-timer': 'S1443448720.036855,VS0,VE0',
+117 verbose headers   vary: 'Accept' }
+118 silly get cb [ 304,
+118 silly get   { date: 'Mon, 28 Sep 2015 13:58:40 GMT',
+118 silly get     via: '1.1 varnish',
+118 silly get     'cache-control': 'max-age=60',
+118 silly get     etag: '"3TBADXOHFNRKDGYZMA7S3PO1U"',
+118 silly get     age: '28',
+118 silly get     connection: 'keep-alive',
+118 silly get     'x-served-by': 'cache-fra1248-FRA',
+118 silly get     'x-cache': 'HIT',
+118 silly get     'x-cache-hits': '2',
+118 silly get     'x-timer': 'S1443448720.036855,VS0,VE0',
+118 silly get     vary: 'Accept' } ]
+119 verbose etag https://registry.npmjs.org/socket.io-client from cache
+120 verbose get saving socket.io-client to /Users/AntoineEisele/.npm/registry.npmjs.org/socket.io-client/.cache.json
+121 silly resolveWithNewModule socket.io-client@1.3.7 checking installable status
+122 silly cache add args [ 'socket.io-client@1.3.7', null ]
+123 verbose cache add spec socket.io-client@1.3.7
+124 silly cache add parsed spec { raw: 'socket.io-client@1.3.7',
+124 silly cache add   scope: null,
+124 silly cache add   name: 'socket.io-client',
+124 silly cache add   rawSpec: '1.3.7',
+124 silly cache add   spec: '1.3.7',
+124 silly cache add   type: 'version' }
+125 silly addNamed socket.io-client@1.3.7
+126 verbose addNamed "1.3.7" is a plain semver version for socket.io-client
+127 silly mapToRegistry name socket.io-client
+128 silly mapToRegistry using default registry
+129 silly mapToRegistry registry https://registry.npmjs.org/
+130 silly mapToRegistry uri https://registry.npmjs.org/socket.io-client
+131 verbose addNameVersion registry:https://registry.npmjs.org/socket.io-client not in flight; fetching
+132 http 304 https://registry.npmjs.org/has-binary-data
+133 verbose headers { date: 'Mon, 28 Sep 2015 13:58:40 GMT',
+133 verbose headers   via: '1.1 varnish',
+133 verbose headers   'cache-control': 'max-age=60',
+133 verbose headers   etag: '"CE5JOBAP2Y5B0IFJ6IIYIFS4O"',
+133 verbose headers   age: '34',
+133 verbose headers   connection: 'keep-alive',
+133 verbose headers   'x-served-by': 'cache-fra1225-FRA',
+133 verbose headers   'x-cache': 'HIT',
+133 verbose headers   'x-cache-hits': '1',
+133 verbose headers   'x-timer': 'S1443448720.042855,VS0,VE0',
+133 verbose headers   vary: 'Accept' }
+134 silly get cb [ 304,
+134 silly get   { date: 'Mon, 28 Sep 2015 13:58:40 GMT',
+134 silly get     via: '1.1 varnish',
+134 silly get     'cache-control': 'max-age=60',
+134 silly get     etag: '"CE5JOBAP2Y5B0IFJ6IIYIFS4O"',
+134 silly get     age: '34',
+134 silly get     connection: 'keep-alive',
+134 silly get     'x-served-by': 'cache-fra1225-FRA',
+134 silly get     'x-cache': 'HIT',
+134 silly get     'x-cache-hits': '1',
+134 silly get     'x-timer': 'S1443448720.042855,VS0,VE0',
+134 silly get     vary: 'Accept' } ]
+135 verbose etag https://registry.npmjs.org/has-binary-data from cache
+136 verbose get saving has-binary-data to /Users/AntoineEisele/.npm/registry.npmjs.org/has-binary-data/.cache.json
+137 http 304 https://registry.npmjs.org/socket.io-adapter
+138 verbose headers { date: 'Mon, 28 Sep 2015 13:58:40 GMT',
+138 verbose headers   via: '1.1 varnish',
+138 verbose headers   'cache-control': 'max-age=60',
+138 verbose headers   etag: '"4RY3X0GRJJ3C0J2LF48APC0B2"',
+138 verbose headers   age: '34',
+138 verbose headers   connection: 'keep-alive',
+138 verbose headers   'x-served-by': 'cache-fra1229-FRA',
+138 verbose headers   'x-cache': 'HIT',
+138 verbose headers   'x-cache-hits': '177',
+138 verbose headers   'x-timer': 'S1443448720.042732,VS0,VE0',
+138 verbose headers   vary: 'Accept' }
+139 silly get cb [ 304,
+139 silly get   { date: 'Mon, 28 Sep 2015 13:58:40 GMT',
+139 silly get     via: '1.1 varnish',
+139 silly get     'cache-control': 'max-age=60',
+139 silly get     etag: '"4RY3X0GRJJ3C0J2LF48APC0B2"',
+139 silly get     age: '34',
+139 silly get     connection: 'keep-alive',
+139 silly get     'x-served-by': 'cache-fra1229-FRA',
+139 silly get     'x-cache': 'HIT',
+139 silly get     'x-cache-hits': '177',
+139 silly get     'x-timer': 'S1443448720.042732,VS0,VE0',
+139 silly get     vary: 'Accept' } ]
+140 verbose etag https://registry.npmjs.org/socket.io-adapter from cache
+141 verbose get saving socket.io-adapter to /Users/AntoineEisele/.npm/registry.npmjs.org/socket.io-adapter/.cache.json
+142 verbose get https://registry.npmjs.org/socket.io-client not expired, no request
+143 silly mapToRegistry name socket.io-client
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry uri https://registry.npmjs.org/socket.io-client
+147 verbose addRemoteTarball https://registry.npmjs.org/socket.io-client/-/socket.io-client-1.3.7.tgz not in flight; adding
+148 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io-client/-/socket.io-client-1.3.7.tgz',
+148 verbose addRemoteTarball   '7ab7c069b8d50425eb265f031f84a97e6ebe719c' ]
+149 silly resolveWithNewModule has-binary-data@0.1.3 checking installable status
+150 silly cache add args [ 'has-binary-data@0.1.3', null ]
+151 verbose cache add spec has-binary-data@0.1.3
+152 silly cache add parsed spec { raw: 'has-binary-data@0.1.3',
+152 silly cache add   scope: null,
+152 silly cache add   name: 'has-binary-data',
+152 silly cache add   rawSpec: '0.1.3',
+152 silly cache add   spec: '0.1.3',
+152 silly cache add   type: 'version' }
+153 silly addNamed has-binary-data@0.1.3
+154 verbose addNamed "0.1.3" is a plain semver version for has-binary-data
+155 silly mapToRegistry name has-binary-data
+156 silly mapToRegistry using default registry
+157 silly mapToRegistry registry https://registry.npmjs.org/
+158 silly mapToRegistry uri https://registry.npmjs.org/has-binary-data
+159 verbose addNameVersion registry:https://registry.npmjs.org/has-binary-data not in flight; fetching
+160 http 304 https://registry.npmjs.org/socket.io-parser
+161 verbose headers { date: 'Mon, 28 Sep 2015 13:58:40 GMT',
+161 verbose headers   via: '1.1 varnish',
+161 verbose headers   'cache-control': 'max-age=60',
+161 verbose headers   etag: '"AUAWA5XBJL5DN0HIAPJM2EPPU"',
+161 verbose headers   age: '12',
+161 verbose headers   connection: 'keep-alive',
+161 verbose headers   'x-served-by': 'cache-fra1244-FRA',
+161 verbose headers   'x-cache': 'HIT',
+161 verbose headers   'x-cache-hits': '1',
+161 verbose headers   'x-timer': 'S1443448720.050535,VS0,VE0',
+161 verbose headers   vary: 'Accept' }
+162 silly get cb [ 304,
+162 silly get   { date: 'Mon, 28 Sep 2015 13:58:40 GMT',
+162 silly get     via: '1.1 varnish',
+162 silly get     'cache-control': 'max-age=60',
+162 silly get     etag: '"AUAWA5XBJL5DN0HIAPJM2EPPU"',
+162 silly get     age: '12',
+162 silly get     connection: 'keep-alive',
+162 silly get     'x-served-by': 'cache-fra1244-FRA',
+162 silly get     'x-cache': 'HIT',
+162 silly get     'x-cache-hits': '1',
+162 silly get     'x-timer': 'S1443448720.050535,VS0,VE0',
+162 silly get     vary: 'Accept' } ]
+163 verbose etag https://registry.npmjs.org/socket.io-parser from cache
+164 verbose get saving socket.io-parser to /Users/AntoineEisele/.npm/registry.npmjs.org/socket.io-parser/.cache.json
+165 silly resolveWithNewModule socket.io-adapter@0.3.1 checking installable status
+166 silly cache add args [ 'socket.io-adapter@0.3.1', null ]
+167 verbose cache add spec socket.io-adapter@0.3.1
+168 silly cache add parsed spec { raw: 'socket.io-adapter@0.3.1',
+168 silly cache add   scope: null,
+168 silly cache add   name: 'socket.io-adapter',
+168 silly cache add   rawSpec: '0.3.1',
+168 silly cache add   spec: '0.3.1',
+168 silly cache add   type: 'version' }
+169 silly addNamed socket.io-adapter@0.3.1
+170 verbose addNamed "0.3.1" is a plain semver version for socket.io-adapter
+171 silly mapToRegistry name socket.io-adapter
+172 silly mapToRegistry using default registry
+173 silly mapToRegistry registry https://registry.npmjs.org/
+174 silly mapToRegistry uri https://registry.npmjs.org/socket.io-adapter
+175 verbose addNameVersion registry:https://registry.npmjs.org/socket.io-adapter not in flight; fetching
+176 verbose get https://registry.npmjs.org/has-binary-data not expired, no request
+177 verbose get https://registry.npmjs.org/socket.io-adapter not expired, no request
+178 info retry fetch attempt 1 at 15:58:40
+179 info attempt registry request try #1 at 15:58:40
+180 http fetch GET https://registry.npmjs.org/socket.io-client/-/socket.io-client-1.3.7.tgz
+181 silly resolveWithNewModule socket.io-parser@2.2.4 checking installable status
+182 silly cache add args [ 'socket.io-parser@2.2.4', null ]
+183 verbose cache add spec socket.io-parser@2.2.4
+184 silly cache add parsed spec { raw: 'socket.io-parser@2.2.4',
+184 silly cache add   scope: null,
+184 silly cache add   name: 'socket.io-parser',
+184 silly cache add   rawSpec: '2.2.4',
+184 silly cache add   spec: '2.2.4',
+184 silly cache add   type: 'version' }
+185 silly addNamed socket.io-parser@2.2.4
+186 verbose addNamed "2.2.4" is a plain semver version for socket.io-parser
+187 silly mapToRegistry name socket.io-parser
+188 silly mapToRegistry using default registry
+189 silly mapToRegistry registry https://registry.npmjs.org/
+190 silly mapToRegistry uri https://registry.npmjs.org/socket.io-parser
+191 verbose addNameVersion registry:https://registry.npmjs.org/socket.io-parser not in flight; fetching
+192 silly cache afterAdd has-binary-data@0.1.3
+193 verbose afterAdd /Users/AntoineEisele/.npm/has-binary-data/0.1.3/package/package.json not in flight; writing
+194 http 304 https://registry.npmjs.org/engine.io
+195 verbose headers { date: 'Mon, 28 Sep 2015 13:58:40 GMT',
+195 verbose headers   via: '1.1 varnish',
+195 verbose headers   'cache-control': 'max-age=60',
+195 verbose headers   etag: '"C9CRWKZLEYGA7DNMOBOLOXW0E"',
+195 verbose headers   age: '34',
+195 verbose headers   connection: 'keep-alive',
+195 verbose headers   'x-served-by': 'cache-fra1248-FRA',
+195 verbose headers   'x-cache': 'HIT',
+195 verbose headers   'x-cache-hits': '3',
+195 verbose headers   'x-timer': 'S1443448720.058045,VS0,VE0',
+195 verbose headers   vary: 'Accept' }
+196 silly get cb [ 304,
+196 silly get   { date: 'Mon, 28 Sep 2015 13:58:40 GMT',
+196 silly get     via: '1.1 varnish',
+196 silly get     'cache-control': 'max-age=60',
+196 silly get     etag: '"C9CRWKZLEYGA7DNMOBOLOXW0E"',
+196 silly get     age: '34',
+196 silly get     connection: 'keep-alive',
+196 silly get     'x-served-by': 'cache-fra1248-FRA',
+196 silly get     'x-cache': 'HIT',
+196 silly get     'x-cache-hits': '3',
+196 silly get     'x-timer': 'S1443448720.058045,VS0,VE0',
+196 silly get     vary: 'Accept' } ]
+197 verbose etag https://registry.npmjs.org/engine.io from cache
+198 verbose get saving engine.io to /Users/AntoineEisele/.npm/registry.npmjs.org/engine.io/.cache.json
+199 http 304 https://registry.npmjs.org/debug
+200 verbose headers { date: 'Mon, 28 Sep 2015 13:58:40 GMT',
+200 verbose headers   via: '1.1 varnish',
+200 verbose headers   'cache-control': 'max-age=60',
+200 verbose headers   etag: '"6UE7LP1DIMFTCHBCCLMYQ1OKS"',
+200 verbose headers   age: '45',
+200 verbose headers   connection: 'keep-alive',
+200 verbose headers   'x-served-by': 'cache-fra1225-FRA',
+200 verbose headers   'x-cache': 'HIT',
+200 verbose headers   'x-cache-hits': '7',
+200 verbose headers   'x-timer': 'S1443448720.058677,VS0,VE0',
+200 verbose headers   vary: 'Accept' }
+201 silly get cb [ 304,
+201 silly get   { date: 'Mon, 28 Sep 2015 13:58:40 GMT',
+201 silly get     via: '1.1 varnish',
+201 silly get     'cache-control': 'max-age=60',
+201 silly get     etag: '"6UE7LP1DIMFTCHBCCLMYQ1OKS"',
+201 silly get     age: '45',
+201 silly get     connection: 'keep-alive',
+201 silly get     'x-served-by': 'cache-fra1225-FRA',
+201 silly get     'x-cache': 'HIT',
+201 silly get     'x-cache-hits': '7',
+201 silly get     'x-timer': 'S1443448720.058677,VS0,VE0',
+201 silly get     vary: 'Accept' } ]
+202 verbose etag https://registry.npmjs.org/debug from cache
+203 verbose get saving debug to /Users/AntoineEisele/.npm/registry.npmjs.org/debug/.cache.json
+204 silly cache afterAdd socket.io-adapter@0.3.1
+205 verbose afterAdd /Users/AntoineEisele/.npm/socket.io-adapter/0.3.1/package/package.json not in flight; writing
+206 verbose get https://registry.npmjs.org/socket.io-parser not expired, no request
+207 silly mapToRegistry name socket.io-parser
+208 silly mapToRegistry using default registry
+209 silly mapToRegistry registry https://registry.npmjs.org/
+210 silly mapToRegistry uri https://registry.npmjs.org/socket.io-parser
+211 verbose addRemoteTarball https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.4.tgz not in flight; adding
+212 verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.4.tgz',
+212 verbose addRemoteTarball   'f9ce19bf1909608ceb15d97721e23bfdd1e7cf65' ]
+213 verbose afterAdd /Users/AntoineEisele/.npm/has-binary-data/0.1.3/package/package.json written
+214 verbose afterAdd /Users/AntoineEisele/.npm/socket.io-adapter/0.3.1/package/package.json written
+215 info retry fetch attempt 1 at 15:58:40
+216 info attempt registry request try #1 at 15:58:40
+217 http fetch GET https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.4.tgz
+218 silly resolveWithNewModule engine.io@1.5.4 checking installable status
+219 silly cache add args [ 'engine.io@1.5.4', null ]
+220 verbose cache add spec engine.io@1.5.4
+221 silly cache add parsed spec { raw: 'engine.io@1.5.4',
+221 silly cache add   scope: null,
+221 silly cache add   name: 'engine.io',
+221 silly cache add   rawSpec: '1.5.4',
+221 silly cache add   spec: '1.5.4',
+221 silly cache add   type: 'version' }
+222 silly addNamed engine.io@1.5.4
+223 verbose addNamed "1.5.4" is a plain semver version for engine.io
+224 silly mapToRegistry name engine.io
+225 silly mapToRegistry using default registry
+226 silly mapToRegistry registry https://registry.npmjs.org/
+227 silly mapToRegistry uri https://registry.npmjs.org/engine.io
+228 verbose addNameVersion registry:https://registry.npmjs.org/engine.io not in flight; fetching
+229 silly resolveWithNewModule debug@2.1.0 checking installable status
+230 silly cache add args [ 'debug@2.1.0', null ]
+231 verbose cache add spec debug@2.1.0
+232 silly cache add parsed spec { raw: 'debug@2.1.0',
+232 silly cache add   scope: null,
+232 silly cache add   name: 'debug',
+232 silly cache add   rawSpec: '2.1.0',
+232 silly cache add   spec: '2.1.0',
+232 silly cache add   type: 'version' }
+233 silly addNamed debug@2.1.0
+234 verbose addNamed "2.1.0" is a plain semver version for debug
+235 silly mapToRegistry name debug
+236 silly mapToRegistry using default registry
+237 silly mapToRegistry registry https://registry.npmjs.org/
+238 silly mapToRegistry uri https://registry.npmjs.org/debug
+239 verbose addNameVersion registry:https://registry.npmjs.org/debug not in flight; fetching
+240 verbose get https://registry.npmjs.org/engine.io not expired, no request
+241 silly mapToRegistry name engine.io
+242 silly mapToRegistry using default registry
+243 silly mapToRegistry registry https://registry.npmjs.org/
+244 silly mapToRegistry uri https://registry.npmjs.org/engine.io
+245 verbose addRemoteTarball https://registry.npmjs.org/engine.io/-/engine.io-1.5.4.tgz not in flight; adding
+246 verbose addRemoteTarball [ 'https://registry.npmjs.org/engine.io/-/engine.io-1.5.4.tgz',
+246 verbose addRemoteTarball   'c6141012911c350631c1b390f5324eb4202e29f2' ]
+247 verbose get https://registry.npmjs.org/debug not expired, no request
+248 info retry fetch attempt 1 at 15:58:40
+249 info attempt registry request try #1 at 15:58:40
+250 http fetch GET https://registry.npmjs.org/engine.io/-/engine.io-1.5.4.tgz
+251 silly cache afterAdd debug@2.1.0
+252 verbose afterAdd /Users/AntoineEisele/.npm/debug/2.1.0/package/package.json not in flight; writing
+253 verbose afterAdd /Users/AntoineEisele/.npm/debug/2.1.0/package/package.json written
+254 http fetch 200 https://registry.npmjs.org/socket.io-client/-/socket.io-client-1.3.7.tgz
+255 http fetch 200 https://registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.4.tgz
+256 silly fetchAndShaCheck shasum 7ab7c069b8d50425eb265f031f84a97e6ebe719c
+257 verbose addTmpTarball /var/folders/tf/p_1b02vd1ljfv_03c9_fxjsr0000gn/T/npm-1087-f519293e/registry.npmjs.org/socket.io-client/-/socket.io-client-1.3.7.tgz not in flight; adding
+258 verbose addTmpTarball already have metadata; skipping unpack for socket.io-client@1.3.7
+259 http fetch 200 https://registry.npmjs.org/engine.io/-/engine.io-1.5.4.tgz
+260 silly fetchAndShaCheck shasum c6141012911c350631c1b390f5324eb4202e29f2
+261 verbose addTmpTarball /var/folders/tf/p_1b02vd1ljfv_03c9_fxjsr0000gn/T/npm-1087-f519293e/registry.npmjs.org/engine.io/-/engine.io-1.5.4.tgz not in flight; adding
+262 verbose addTmpTarball already have metadata; skipping unpack for engine.io@1.5.4
+263 silly fetchAndShaCheck shasum f9ce19bf1909608ceb15d97721e23bfdd1e7cf65
+264 verbose addTmpTarball /var/folders/tf/p_1b02vd1ljfv_03c9_fxjsr0000gn/T/npm-1087-f519293e/registry.npmjs.org/socket.io-parser/-/socket.io-parser-2.2.4.tgz not in flight; adding
+265 verbose addTmpTarball already have metadata; skipping unpack for socket.io-parser@2.2.4
+266 silly rollbackFailedOptional Starting
+267 silly rollbackFailedOptional Finishing
+268 silly runTopLevelLifecycles Starting
+269 silly runTopLevelLifecycles Finishing
+270 silly install printInstalled
+271 verbose stack Error: EACCES, mkdir '/Users/AntoineEisele/.npm/socket.io-client/1.3.7'
+272 verbose cwd /Users/AntoineEisele/Desktop/influence
+273 error Darwin 14.5.0
+274 error argv "node" "/usr/local/bin/npm" "install" "socket.io" "--save"
+275 error node v0.10.36
+276 error npm  v3.3.4
+277 error path /Users/AntoineEisele/.npm/socket.io-client/1.3.7
+278 error code EACCES
+279 error errno 3
+280 error Error: EACCES, mkdir '/Users/AntoineEisele/.npm/socket.io-client/1.3.7'
+280 error  { [Error: EACCES, mkdir '/Users/AntoineEisele/.npm/socket.io-client/1.3.7']
+280 error   errno: 3,
+280 error   code: 'EACCES',
+280 error   path: '/Users/AntoineEisele/.npm/socket.io-client/1.3.7',
+280 error   parent: 'socket.io' }
+281 error Please try running this command again as root/Administrator.
+282 verbose exit [ 3, true ]
