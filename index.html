@@ -3,11 +3,16 @@
 <head>
   <meta charset="utf-8">
   <title>music</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
   <style media="screen">
     .choice {
       float: left;
       margin: 1em;
     }
+      body{
+      text-align: center;}
     img {
       cursor: pointer;
       width: 200px;
@@ -17,47 +22,75 @@
       border: 2px solid #f00;
     }
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <h1>What is your favorite music ?</h1>
+<div class="container-fluid">
+<h1>Choose quickly and wisely !</h1>
 
-  <div class="choice one">
-    <div class="">
-      <img src="http://blog.ticketmaster.co.uk/wp-content/uploads/2015/08/one-direction-split-2015.jpg" alt="one direction">
-    </div>
-    One Direction
-    <span id="one_direction"></span>
-  </div>
-
-  <div class="choice two">
-    <div class="">
-      <img src="http://cdn-img.instyle.com/sites/default/files/styles/428xflex/public/images/2012/TRANSFORMATIONS/2009-Justin-Bieber-400_0.jpg?itok=oD8Yh7Ec" alt="justin bieber">
-    </div>
-    Justin Bieber
-    <span id="justin_bieber"></span>
-  </div>
+<h3 id="countdown"></h3>
+<div class="row">
+<div class="col-md-6">
+<div class="choice left">
+  <img>
+  <div class="caption"></div>
+  <div class="total"></div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="choice right">
+  <img>
+  <div class="caption"></div>
+  <div class="total"></div>
+</div>
+</div>
+</div>
 
 <script src="/socket.io/socket.io.js"></script>
 <script>
-var socket = io();
-window.addEventListener('load', function () {
-  var choices = document.querySelectorAll('img');
-  for (var i = 0; i < choices.length; i++) {
-    choices[i].addEventListener('mouseover', function () {
-      var what = this.getAttribute('alt');
-      console.log(what);
-      socket.emit('choice', what);
-    });
+  var socket = io();
+  $(function () {
+    // detect mouse overs
+    $('.choice').hover(onhover,offHover);
+    function onhover() {
+      socket.emit('onhover', rightleft($(this)));
+    }
+    function offHover(){
+      socket.emit('offhover',rightleft($(this)));
+    }
+    countDown();
+  });
+  // Return if the element is left || right
+  function rightleft(element){
+    var what = 'left';
+    if(element.hasClass('right')) {
+      what = 'right';
+    }
+    return what;
   }
-});
-socket.on('message', function (body) {
-  console.log('from server ' + body);
-});
-socket.on('total', function (votes) {
-  document.querySelector('#justin_bieber').innerHTML = votes['justin bieber'];
-  document.querySelector('#one_direction').innerHTML = votes['one direction'];
-})
+  // update total
+  socket.on('total', function (votes) {
+    $(".left .total").html(votes.left.total);
+    $(".right .total").html(votes.right.total);
+  });
+  // update the whole vote
+  socket.on('votes', function (votes) {
+    $(".left img").prop('src', votes.left.src);
+    $(".left .caption").html(votes.left.name);
+    $(".right img").prop('src', votes.right.src);
+    $(".right .caption").html(votes.right.name);
+    i = 30;
+  });
+  setInterval(function(){
+    countDown();
+  },100);
+  var i = 30;
+  function countDown(){
+    i--;
+    $('#countdown').html(i/10 + 's');
+  }
 </script>
-
+</div>
 </body>
 </html>
